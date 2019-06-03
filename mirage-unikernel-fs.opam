@@ -1,0 +1,20 @@
+opam-version: "2.0"
+name: "mirage-unikernel-fs"
+maintainer: "takayuki.imada@gmail.com"
+homepage: "https://github.com/TImada/mirage_fs_sample"
+bug-reports: "https://github.com/TImada/mirage_fs_sample/issues"
+depends: [ "functoria-runtime" 
+           "lwt" 
+           "mirage" {build & >="3.5.0" & <"3.6.0"}
+           "mirage-clock-freestanding" {>="2.0.0" & <"3.0.0"}
+           "mirage-fs-lwt" 
+           "mirage-fs-mem" 
+           "mirage-logs" {>="0.3.0" & <"0.4.0"}
+           "mirage-runtime" {>="3.5.0" & <"3.6.0"}
+           "mirage-types" {>="3.5.0" & <"3.6.0"}
+           "mirage-types-lwt" {>="3.5.0" & <"3.6.0"}
+           "ocaml" {build & >="4.04.2"}
+           "ocamlbuild" {build}
+           "ocamlfind" {build}
+]
+build: [ "mirage" "build" ]
