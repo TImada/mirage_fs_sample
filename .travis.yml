@@ -1,5 +1,8 @@
+dist: xenial
 language: c
 script: bash -ex .travis-ci.sh
 sudo: required
 env:
-  - UPDATE_GCC_BINUTILS=1 OCAML_VERSION=4.06 MIRAGE_BACKEND=hvt
+  matrix:
+  - OCAML_VERSION=4.06 MIRAGE_BACKEND=hvt
+  - OCAML_VERSION=4.06 MIRAGE_BACKEND=xen
