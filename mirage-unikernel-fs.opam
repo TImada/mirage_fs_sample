@@ -18,3 +18,7 @@ depends: [ "functoria-runtime"
            "ocamlfind" {build}
 ]
 build: [ "mirage" "build" ]
+synopsis: "MirageOS filesystem sample"
+description: """
+This is a package for testing a memory-based filesystem on MirageOS.
+"""
