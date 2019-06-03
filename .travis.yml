@@ -1,6 +1,4 @@
 language: c
 script: bash -ex .travis-ci.sh
 sudo: required
-env:
-  matrix:
-  - UPDATE_GCC_BINUTILS=1 OCAML_VERSION=4.06 MIRAGE_MODE=hvt
+env: UPDATE_GCC_BINUTILS=1 OCAML_VERSION=4.06 MIRAGE_MODE=hvt

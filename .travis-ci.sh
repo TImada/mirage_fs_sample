@@ -1,14 +1,4 @@
-# default tests
+# build test
 
 wget https://raw.githubusercontent.com/ocaml/ocaml-travisci-skeleton/master/.travis-opam.sh
 bash -ex .travis-opam.sh
-
-# build the examples
-
-export OPAMYES=1
-eval `opam config env`
-
-opam install mirage
-mirage configure -t $MIRAGE_MODE $FLAGS
-make depend
-make 
