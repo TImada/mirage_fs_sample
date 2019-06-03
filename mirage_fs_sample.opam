@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "mirage-unikernel-fs"
+name: "mirage_fs_sample"
 maintainer: "takayuki.imada@gmail.com"
 homepage: "https://github.com/TImada/mirage_fs_sample"
 bug-reports: "https://github.com/TImada/mirage_fs_sample/issues"
